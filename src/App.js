@@ -2,8 +2,7 @@ import React from 'react';
 import {useNavigate} from 'react-router-dom'
 // import './App.css';
 // import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route}
-	from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from './screen/Home';
 import Aboutus from './screen/Aboutus';
 import List from './screen/Lists.js';
@@ -17,13 +16,13 @@ import Order from './screen/Order'
 function App() {
 	
 return (
-	<Router>
+	<BrowserRouter>
 	
 	
 	<Routes>
 	
-		<Route exact path='/'  element={<Home />} />
-		<Route exact path='aboutus' element={<Aboutus/>} />
+		<Route path='/'  element={<Home />} />
+		<Route path='aboutus' element={<Aboutus/>} />
 		<Route path='list' element={<List/>} />
 		<Route path='login' element={<Login/>}/>
 		<Route path ='signup' element={<SignUp/>} />
@@ -32,7 +31,7 @@ return (
 		<Route path='order' element={<Order/>}/>
 		
 	</Routes>
-	</Router>
+	</BrowserRouter>
 );
 }
 
