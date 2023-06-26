@@ -23,13 +23,13 @@ return (
 	<Routes>
 	
 		<Route exact path='/'  element={<Home />} />
-		<Route exact path='/Aboutus' element={<Aboutus/>} />
-		<Route path='/List' element={<List/>} />
-		<Route path='/Login' element={<Login/>}/>
-		<Route path ='/Signup' element={<SignUp/>} />
-        <Route path='/ViewProd/:id' element={<ViewProd/>}/>
-		<Route path='/Cart'     element={<Cart/>}/>
-		<Route path='/Order' element={<Order/>}/>
+		<Route exact path='aboutus' element={<Aboutus/>} />
+		<Route path='list' element={<List/>} />
+		<Route path='login' element={<Login/>}/>
+		<Route path ='signup' element={<SignUp/>} />
+        <Route path='viewProd/:id' element={<ViewProd/>}/>
+		<Route path='cart'     element={<Cart/>}/>
+		<Route path='order' element={<Order/>}/>
 		
 	</Routes>
 	</Router>
